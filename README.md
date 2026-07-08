@@ -78,11 +78,3 @@ npm run dev
 1. Go to the frontend URL, submit an application.
 2. Go to `/admin`, log in with your admin username + the password you hashed.
 3. See the submission in the table, then try **Export CSV**.
-
-## Notes for Shafaat
-
-- **Track list** is currently a placeholder pulled from the public site — swap in `backend/models/Signup.js` and `frontend/src/components/ApplicationForm.jsx` once the confirmed list is sent.
-- **Brand theme** in `frontend/src/index.css` is a placeholder matching the site's tone — every color/font is a CSS variable, so swapping in the real brand is a one-file change.
-- **CV upload** left out of v1 as agreed.
-- **No real applicant data** used — only sample data on local MongoDB so far.
-- **Security baseline in place:** bcrypt-hashed admin password, JWT auth, rate limiting, CORS allow-list, helmet security headers.
